@@ -1,0 +1,43 @@
+
+.card{
+    height: 60rem;
+    text-align: center;
+    background-color: $color-white;
+    padding:0;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    &__img{
+        height:25rem;
+        width: 100%;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+
+        &-1{
+            background-image: url("../img/mambo.png");
+        }
+        &-2{
+            background-image: url("../img/photo.png");
+        }
+        &-3{
+            background-image: url("../img/trivia.png");
+        }
+    }
+
+    &__details{
+        padding:1rem 2rem;
+    }
+
+    &__text{
+        text-align: left;
+
+    }
+
+    &__tools-header,  &__tools{
+        display:block;
+        color:$color-grey-dark;
+    }
+
+
+}

@@ -21,181 +21,165 @@
     <title>Porfolio</title>
 </head>
 <body>
-    <div class="navigation">
-        <nav class="navigation__nav">
-            <ul class="navigation_list">
-                <li class="navigation__link">
-                    <a href="#" class="navigation__link">Home</a>
-                    <a href="#" class="navigation__link">About</a>
-                    <a href="#" class="navigation__link">Projects</a>
-                    <a href="#" class="navigation__link">Contact</a>
-                </li>
+
+
+        <nav class="navigation">
+            <ul class="navigation__list">
+
+                    <a href="#header" class="navigation__link">Home</a>
+                    <a href="#about" class="navigation__link">About</a>
+                    <a href="#project" class="navigation__link">Projects</a>
+                    <a href="#contact" class="navigation__link">Contact</a>
 
             </ul>
-
         </nav>
-    </div>
-    <header class="header">
-        <div class="header__img-box">
-            <img src="" alt="main illustration" class="header__img">
-        </div>
-        <div class="header__text-box">
-            <h1 class="heading-primary--main">Hi, I'm Yuko!</h1>
-            <p class="heading-primary--sub">Front-end Developer</p>
-        </div>
-        <div class="header__icon-box">
-            <a href="#" class="fa fa-github"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+
+    <header class="header" id="header">
+        <div class="header__box">
+            <div class="row">
+                <div class="col-1-of-2 u-center-text">
+                    <h1 class="heading heading-primary--main">Hi, I'm Yuko!</h1>
+                    <p class="heading-sub">Front-end Developer</p>
+                    <div class="header__icon-box">
+                        <a href="https://github.com/Yuko-code" class="fa fa-github"></a>
+                        <a href="https://twitter.com/codieTamago" class="fa fa-twitter"></a>
+                        <a href="https://www.linkedin.com/in/yuko-t-b07269225/" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="header__img-box">
+                        <img src="./img/main-img.svg" alt="main illustration" class="header__img">
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="section-about">
+
+
+        <section class="section-about" id="about">
+            <div class="u-center-text">
+                <h2 class="heading heading-secondary">
+                    About Me
+                </h2>
+            </div>
+
+            <div class="row about">
+            <div class="col-1-of-2">
+            <div class="about__box">
+            <p class="about__box-text paragraph-large">I am a Front-end developer based in Canberra, Australia.
+                I also enjoy creating minimalist illustration and learning
+                about modern web design.
+                It has been a pleasure to be a part of this supportive community
+                to learn from others, encourage
+                each other and also help others.
+                When I’m not coding, I may be out there walking my dog or dancing salsa!</p>
+                <ul class="about__box-list paragraph-medium">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Sass</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>Figma</li>
+                    <li>NodeJS</li>
+                    <li>SQL</li>
+                    <li>NoSQL</li>
+                    <li>Cloud Databases</li>
+                    <li>Cloud Storage</li>
+                    <li>Maps and Geocoding</li>
+                    <li>Adobe Illustrator</li>
+                </ul>
+            </div>
+                <a class="btn btn--about" href="/files/YukoTaniguchi2021.pdf" download>Download my CVs</a>
+            </div>
+            <div class="col-1-of-2">
+                <div class="img-box">
+                <img class="img-box__img" src="img/img.svg"></div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="section-project" id="project">
+            <div class="u-center-text">
+                <h2 class="heading heading-secondary">
+                    Projects
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__img card__img-1"></div>
+                        <h3 class="heading heading-tertiary">Mambo the Sproodle</h3>
+                        <div class="card__details">
+                            <p class="card__text paragraph-medium">This project is all about my dog - Mambo's travel journey and dog-friendly community.</p>
+                            <span class="card__tools-header  paragraph-small">Technologies/tools used: </span>
+                            <small class="card__tools paragraph-small">HTML, CSS, JavaScript, Mapbox, MongoDB, Cloudinary, Node.js, Bootstrap</small>
+                        </div>
+                            <a href="#" class="btn btn--code">View code</a>
+                            <a href="https://desolate-thicket-30385.herokuapp.com/?fbclid=IwAR3H_HPAZF9_kblpugeHehwEnnFFEUYaXUmS8dBI8OxmXCKr8xKcG32eHd4" class="btn btn--site">View project</a>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__img card__img-2"></div>
+                        <h3 class="heading heading-tertiary">Shahbazi Photography</h3>
+                        <div class="card__details">
+                            <p class="card__text paragraph-medium">In this project I made a very simple portfolio/showcase of a local photographer.</p>
+                            <span class="card__tools-header  paragraph-small">Technologies/tools used: </span>
+                            <small class="card__tools paragraph-small">HTML, CSS, JavaScript, MongoDB, Cloudinary, Node.js, Heroku</small>
+                        </div>
+                            <a href="#" class="btn btn--code">View code</a>
+                            <a href="https://www.shahbaziphotography.com/" class="btn btn--site">View project</a>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__img card__img-3"></div>
+                        <h3 class="heading heading-tertiary">It's Trivia Time!</h3>
+                        <div class="card__details">
+                            <p class="card__text paragraph-medium">Users are able to select genres and view multiple choices. For your next trivia game!</p>
+                            <span class="card__tools-header paragraph-small">Technologies/tools used: </span>
+                            <small class="card__tools paragraph-small">HTML, CSS, JavaScript, API, Google Fonts, Github &nbsp; &nbsp;</small>
+                        </div>
+                            <a href="https://yuko-code.github.io/itsTriviaTime.app/?fbclid=IwAR3H_HPAZF9_kblpugeHehwEnnFFEUYaXUmS8dBI8OxmXCKr8xKcG32eHd4" class="btn btn--code">View code</a>
+                            <a href="https://github.com/Yuko-code/itsTriviaTime.app" class="btn btn--site">View project</a>
+                    </div>
+                </div>
+            </div>
+
 
         </section>
-        <section class="section-project">
 
+        <section class="section-contact" id="contact">
+
+            <div class="u-center-text">
+                <h2 class="heading heading-secondary">
+                    Contact Me
+                </h2>
+            </div>
+            <div class="form">
+            <form class="form__contact" action="https://formsubmit.co/yukotaniguchi2914@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New submission!" >
+                <input class="form__contact--email" type="email" name="email" placeholder="Email Address" class="email" required>
+                <textarea class="form__contact--text" name="message" placeholder="Write your message here" required></textarea>
+                <button class="btn btn--submit" type="submit">Send</button>
+                <input type="hidden" name="_next" value="https://ytwebxdesign.com/thankyou.html">
+
+            <div class="form__icons">
+                <a href="https://github.com/Yuko-code" class="fa fa-github"></a>
+                <a href="https://twitter.com/codieTamago" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/yuko-t-b07269225/" class="fa fa-linkedin"></a>
+            </div>
+            </form>
+            </div>
         </section>
-        <section class="section-contact">
 
-        </section>
-    </main>
 
-    <footer>
-
+    <footer class="footer">
+        <p class="paragraph-medium">&copy;YT Web&Design 2022</p>
     </footer>
-
-
-
-
-
-
-
-
-    About Me
-    I am a web designer & developer based in Canberra, Australia.
-    I also enjoy creating minimalist illustration. Minimal design simply describes
-    myself and my life. But it doesn’t have to
-    mean it’s boring!
-    I believe that simplicity gives me creativity and productivity.
-
-    HTML5
-    CSS3
-    Sass
-    JavaScript
-    Bootstrap
-    Figma
-    NodeJS
-    SQL
-    NoSQL
-    Cloud Databases
-    Cloud Storage
-    Maps and Geocoding
-    Adobe Illustrator
-
-    Download CVs
-    <a class="downloadcv" href="/files/YukoTaniguchi2021.pdf" download>Download CVs</a>
-
-    Projects
-    Mambo the Sproodle
-    This project is all about my dog - Mambo's travel journey and dog-friendly community.
-    Technologies/tools used: HTML, CSS, JavaScript, Mapbox, MongoDB, Cloudinary, Node.js, Bootstrap, Heroku, etc.
-    View code
-    View Project
-    https://desolate-thicket-30385.herokuapp.com/?fbclid=IwAR3H_HPAZF9_kblpugeHehwEnnFFEUYaXUmS8dBI8OxmXCKr8xKcG32eHd4
-    Shahbazi Photography
-    In this project I made a very simple portfolio/showcase of a local photographer.
-    Technologies/tools used: HTML, CSS, JavaScript, MongoDB, Cloudinary, Node.js, Google Fonts, Heroku, etc.
-    View code
-    View Project
-    https://www.shahbaziphotography.com/
-
-    It's Trivia Time!
-    Here, I have used Trivia API to create a trivia generator tool. This may become useful to host a trivia night?
-    Technologies/tools used: HTML, CSS, JavaScript, API, Google Fonts etc.
-    View code
-    https://yuko-code.github.io/itsTriviaTime.app/?fbclid=IwAR3H_HPAZF9_kblpugeHehwEnnFFEUYaXUmS8dBI8OxmXCKr8xKcG32eHd4
-    View Project
-    https://github.com/Yuko-code/itsTriviaTime.app
-
-    Contact Me
-
-<!--
-    <form action="https://formsubmit.co/yukotaniguchi2914@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New submission!">
-        <input type="email" name="email" placeholder="Email Address" class="email" required>
-        <textarea name="message" placeholder="Write your message here" required></textarea>
-        <button type="submit">Send</button>
-        <input type="hidden" name="_next" value="https://ytwebxdesign.com/thankyou.html">
-    </form>
--->
-    &copy;YT Web&Design 2021
-
-        <!--
-        <section class="grid-test">
-            <div class="row">
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-                <div class="col-1-of-2">
-                    col 1 of 2
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    col 1 of 3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    col 2 of 3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    col 1 of 4
-                </div>
-                <div class="col-2-of-4">
-                    col 2 of 4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    col 3 of 4
-                </div>
-            </div>
-        </section>
-        -->
 
     <script src="app.js"></script>
 </body>

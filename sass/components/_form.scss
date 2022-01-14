@@ -1,0 +1,35 @@
+.form{
+    background-color: rgba($color-white, .8);
+    width:45%;
+    border-radius: 2rem;
+    text-align: center;
+
+    &__contact{
+        padding:5rem 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contact--email,&__contact--text{
+        font-family: inherit;
+        font-size: 2.5rem;
+        border:none;
+        resize:none;
+        border-radius: 2rem;
+        padding:2rem;
+    }
+    &__contact--email{
+        height:6rem;
+        margin-bottom: 2rem;
+
+    }
+    &__contact--text{
+        height: 35rem;
+        margin-bottom: 4rem;
+    }
+    &__icons{
+        margin-top:2rem;
+    }
+
+
+}

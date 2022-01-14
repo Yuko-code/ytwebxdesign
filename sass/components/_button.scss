@@ -1,0 +1,136 @@
+
+.btn{
+    &,
+    &:link,
+    &:visited {
+        //background-color: $color-primary-light;//change here
+        color:$color-dark;
+        text-decoration: none;
+        text-align: center;
+        padding: 1.2rem 4rem;
+        display:block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position:relative;
+        font-size:2rem;
+        border:none;
+        cursor: pointer;
+
+    }
+    &--about{
+        background-color: $color-primary-light;
+    }
+
+    &--code,&--site{
+        margin: 2rem;
+    }
+    &--code{
+        background-color: $color-secondary-light;
+    }
+    &--site{
+        background-color: $color-tertiary-light;
+    }
+    &--submit{
+        background-color:$color-primary-light;
+        height:6rem;
+    }
+
+}
+
+    /*
+    &,
+    &:link,
+    &:visited {
+        background-color: $color-primary-light;//change here
+        color:$color-dark;
+        text-decoration: none;
+        padding: 1.2rem 4rem;
+        display:block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position:relative;
+        font-size:2rem;
+        border:none;
+        cursor: pointer;
+    }
+
+    &:hover{
+
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-dark,.2);
+    }
+
+    &:active,
+    &:focus
+    {
+        outline:none;
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-dark,.2);
+    }
+
+
+    &::after{
+        content: "";
+        display: inline-block;
+        height:100%;
+        width:100%;
+        border-radius:10rem;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+        transition:all .4s;
+    }
+
+
+    &--code{
+
+
+        &::after{
+            background-color: $color-grey-dark;
+        }
+    }
+    &--site{
+        background-color: $color-primary-dark;
+        color:$color-white;
+        &::after{
+            background-color: $color-primary-dark;
+        }
+    }
+
+
+    &:hover::after{
+        transform:scaleX(1.4) scaleY(1.6);
+        opacity:0;
+    }
+
+
+    }
+
+    .btn-text{
+        &:link,
+        &:visited{
+            font-size: $default-font-size;
+            color:$color-primary-dark;
+            display:inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid $color-primary-dark;
+            padding: 3px;
+            transition:all .2s;
+        }
+        &:hover{
+            background-color: $color-primary-light;
+            color:$color-white;
+            box-shadow: 0 1rem 2rem rgba($color-dark,.15);
+            transform:translateY(-2px);
+
+        }
+        &:active{
+            box-shadow: 0 .5rem 1rem rgba($color-dark,.15);
+            transform:translateY(0);
+
+        }
+
+    }
+
+    */

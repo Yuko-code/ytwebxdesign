@@ -1,35 +1,359 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-/* 1. Use a more-intuitive box-sizing model. */
-*, *::before, *::after {
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
-/* 2. Remove default margin */
-* {
-  margin: 0; }
-
-/* 3. Allow percentage-based heights in the application*/
-/* 10px / 16px =62.5% */
-html, body {
-  height: 100%;
+html {
+  /* 10px / 16px =62.5% */
   font-size: 62.5%; }
 
-/* Typographic tweaks! 4. Add accessible line-height 5. Improve text rendering */
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased; }
+  width: 100%;
+  min-height: 100vh;
+  position: relative; }
 
-/* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+body {
+  color: #2A2A34;
+  font-family: 'Jaldi', sans-serif;
+  font-weight: 400;
+  line-height: 1.25; }
+
+.heading {
+  font-family: active, sans-serif;
+  font-weight: 700;
+  display: inline-block; }
+
+.heading-primary--main {
+  font-size: 11rem;
+  margin-top: 15rem;
+  letter-spacing: 2px; }
+
+.heading-sub {
+  font-size: 3.6rem;
+  letter-spacing: 2.5px; }
+
+.heading-secondary {
+  font-size: 8rem;
+  margin-bottom: 4rem; }
+
+.heading-tertiary {
+  font-size: 4rem; }
+
+.paragraph-large {
+  font-size: 2.2rem;
+  letter-spacing: .25px;
+  line-height: 1.5; }
+
+.paragraph-medium {
+  font-size: 1.8rem;
+  margin-bottom: .5rem; }
+
+.paragraph-small {
+  font-size: 1.6rem; }
+
+.fa {
+  color: #5D6061;
+  text-decoration: none;
+  font-size: 7rem;
+  height: 7rem;
+  width: 7rem; }
+  .fa:not(:first-child) {
+    margin-left: 4rem; }
+
+/*
+.heading-xlarge{
+    font-size:14.4rem;
+}
+
+.heading-large{
+    font-size:9.6rem;
+    font-weight: 700;
+
+
+.heading-medium{
+    font-size:7.2rem;
+    font-weight: 700;
+}
+
+*/
+.u-center-text {
+  text-align: center !important; }
+
+.card {
+  height: 60rem;
+  text-align: center;
+  background-color: #F9F9F8;
+  padding: 0;
+  border-radius: 2rem;
+  overflow: hidden; }
+  .card__img {
+    height: 25rem;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; }
+    .card__img-1 {
+      background-image: url("../img/mambo.png"); }
+    .card__img-2 {
+      background-image: url("../img/photo.png"); }
+    .card__img-3 {
+      background-image: url("../img/trivia.png"); }
+  .card__details {
+    padding: 1rem 2rem; }
+  .card__text {
+    text-align: left; }
+  .card__tools-header, .card__tools {
+    display: block;
+    color: #5D6061; }
+
+.btn, .btn:link, .btn:visited {
+  color: #2A2A34;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.2rem 4rem;
   display: block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer; }
+
+.btn--about {
+  background-color: #CEABA5; }
+
+.btn--code, .btn--site {
+  margin: 2rem; }
+
+.btn--code {
+  background-color: #E5DED7; }
+
+.btn--site {
+  background-color: #9BB7CF; }
+
+.btn--submit {
+  background-color: #CEABA5;
+  height: 6rem; }
+
+/*
+    &,
+    &:link,
+    &:visited {
+        background-color: $color-primary-light;//change here
+        color:$color-dark;
+        text-decoration: none;
+        padding: 1.2rem 4rem;
+        display:block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position:relative;
+        font-size:2rem;
+        border:none;
+        cursor: pointer;
+    }
+
+    &:hover{
+
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-dark,.2);
+    }
+
+    &:active,
+    &:focus
+    {
+        outline:none;
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-dark,.2);
+    }
+
+
+    &::after{
+        content: "";
+        display: inline-block;
+        height:100%;
+        width:100%;
+        border-radius:10rem;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+        transition:all .4s;
+    }
+
+
+    &--code{
+
+
+        &::after{
+            background-color: $color-grey-dark;
+        }
+    }
+    &--site{
+        background-color: $color-primary-dark;
+        color:$color-white;
+        &::after{
+            background-color: $color-primary-dark;
+        }
+    }
+
+
+    &:hover::after{
+        transform:scaleX(1.4) scaleY(1.6);
+        opacity:0;
+    }
+
+
+    }
+
+    .btn-text{
+        &:link,
+        &:visited{
+            font-size: $default-font-size;
+            color:$color-primary-dark;
+            display:inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid $color-primary-dark;
+            padding: 3px;
+            transition:all .2s;
+        }
+        &:hover{
+            background-color: $color-primary-light;
+            color:$color-white;
+            box-shadow: 0 1rem 2rem rgba($color-dark,.15);
+            transform:translateY(-2px);
+
+        }
+        &:active{
+            box-shadow: 0 .5rem 1rem rgba($color-dark,.15);
+            transform:translateY(0);
+
+        }
+
+    }
+
+    */
+.form {
+  background-color: rgba(249, 249, 248, 0.8);
+  width: 45%;
+  border-radius: 2rem;
+  text-align: center; }
+  .form__contact {
+    padding: 5rem 5rem;
+    display: flex;
+    flex-direction: column; }
+  .form__contact--email, .form__contact--text {
+    font-family: inherit;
+    font-size: 2.5rem;
+    border: none;
+    resize: none;
+    border-radius: 2rem;
+    padding: 2rem; }
+  .form__contact--email {
+    height: 6rem;
+    margin-bottom: 2rem; }
+  .form__contact--text {
+    height: 35rem;
+    margin-bottom: 4rem; }
+  .form__icons {
+    margin-top: 2rem; }
+
+.row {
   max-width: 100%; }
+  .row:not(:last-child) {
+    margin-bottom: 3rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 4rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 4rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 4rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 4rem) / 3) + 4rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 4rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
 
-/* 7. Remove built-in form typography styles */
-input, button, textarea, select {
-  font: inherit; }
+.about {
+  width: 80%;
+  margin: 0 auto; }
+  .about__box-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem auto; }
+    .about__box-list > * {
+      text-decoration: none;
+      list-style: none;
+      background-color: #9BB7CF;
+      border-radius: 10rem;
+      padding: 1rem;
+      margin: .4rem .6rem; }
 
-/* 8. Avoid text overflows*/
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word; }
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50rem; }
+  .img-box__img {
+    height: 50rem; }
+
+.navigation {
+  height: 8rem;
+  width: 100%;
+  background-color: rgba(249, 249, 248, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .navigation__list > * {
+    text-decoration: none;
+    color: #5D6061;
+    font-size: 3rem;
+    margin-right: 3rem; }
+
+.header {
+  background-color: #E5DED7;
+  min-height: 100vh;
+  padding: 10rem 10rem 8rem 10rem; }
+  .header__box {
+    width: 90%;
+    margin: auto; }
+  .header__icon-box {
+    margin-top: 14rem; }
+  .header__img {
+    height: auto;
+    padding: 7rem; }
+
+.section-about {
+  background-color: #CFC2B6;
+  min-height: 100vh;
+  padding: 10rem 10rem 8rem 10rem; }
+
+.section-project {
+  background-color: #B09692;
+  min-height: 100vh;
+  padding: 10rem 10rem 8rem 10rem; }
+
+.section-contact {
+  background-color: rgba(155, 183, 207, 0.8);
+  min-height: 100vh;
+  padding: 10rem 10rem 8rem 10rem; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem; }

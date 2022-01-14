@@ -1,0 +1,36 @@
+
+
+.about{
+    width:80%;
+    margin:0 auto;
+
+
+&__box{
+
+    &-list{
+        display:flex;
+        flex-wrap: wrap;
+        margin:4rem auto;
+
+        & > *{
+            text-decoration: none;
+            list-style: none;
+            background-color: $color-tertiary-light;
+            border-radius: 10rem;
+            padding:1rem;
+            margin: .4rem .6rem;
+        }
+    }
+
+}
+}
+.img-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:50rem;
+
+&__img{
+    height:50rem;
+}
+}

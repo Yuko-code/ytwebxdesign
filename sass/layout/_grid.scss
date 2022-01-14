@@ -1,10 +1,9 @@
-/*
-.row{
 
+.row{
    max-width: $grid-width;
 
     &:not(:last-child){ //every thing except last child
-       // margin-bottom: $gutter-vertical;
+       margin-bottom: $gutter-vertical;
     }
 
    @include clearfix;
@@ -15,8 +14,6 @@
             margin-right:$gutter-horizontal;
         }
     }
-
-
 
     .col-1-of-2{
         width: calc((100% - #{$gutter-horizontal}) / 2);
@@ -43,4 +40,4 @@
     }
 
 
-} */
+}
